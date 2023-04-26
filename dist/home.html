@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.css?_v=20230426111718" integrity="sha512-xdNgqS9I7CHbzFYjDiySh1lV5Sc4sobLLAvHLqtZY6ynlCiWpl+eGPds9CAMFFst5QgZRgd92qfeg03sl3UCjA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230426111718">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="overflow-x: hidden;">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+
+			</div>
+		</header>
+		<main class="page">
+			<div class="fixed">
+				<div class="constructor__body">
+					<div class="constructor__top" data-tabs>
+						<div class="constructor__top-line" data-tabs-titles>
+							<div class="top__line-item _tab-active">
+								<p>Пакет простой</p>
+							</div>
+							<div class="top__line-item">
+								<p>Пакет с клапаном</p>
+							</div>
+							<div class="top__line-item">
+								<p>Пакет с клапаном и донной складкой</p>
+							</div>
+						</div>
+						<div class="constructor__top-wrapper" data-tabs-body>
+							<div class="constructor-top-bottom">
+								<div class="constructor__top-body">
+									<div class="constructor__top-left">
+										<div class="constructor__left-body">
+											<div class="constructor__left-left">
+												<picture><source srcset="img/constructor/const.webp" type="image/webp"><img src="img/constructor/const.png"></picture>
+											</div>
+											<div class="constructor__left-right">
+												<div class="width">
+													<span>Припуск по длине</span>
+													<input type="number" class="input__number" placeholder="0 мм" min="0">
+												</div>
+											</div>
+										</div>
+										<div class="long">
+											<span>Припуск по ширине</span>
+											<input type="number" class="input__number" placeholder="0 мм" min="0">
+										</div>
+									</div>
+									<div class="constructor__top-right">
+										<div class="constructor__right-body">
+											<div class="constructor__right-top">
+												<p>Размеры для расчета</p>
+											</div>
+											<div class="constructor__right-table">
+												<div class="constructor__table-line">
+													<p class="table-left">Ширина пакета</p>
+													<p class="table-right">170 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Длина пакета</p>
+													<p class="table-right">320 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Полотно</p>
+													<p class="table-right">380 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">ПолуРукав</p>
+													<p class="table-right">80 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Рукав</p>
+													<p class="table-right">900 <span>мм</span></p>
+												</div>
+											</div>
+											<div class="constructor__right-bottom">
+												<div class="constructor__right-info">
+													<p>Заявка <span>№ 5:55:15</span></p>
+													<p>Дата <span>30.03.2023</span></p>
+												</div>
+												<div class="constructor__right-form">
+													<form id="construct">
+														<div class="constructor__form-inputs">
+															<div class="constructor-inputs">
+																<input type="text" name="name" class="constructor-input" placeholder="ФИО или Компания*">
+															</div>
+															<div class="constructor-inputs">
+																<input type="text" name="phone" class="constructor-input" placeholder="Телефон*">
+															</div>
+															<div class="constructor-inputs">
+																<input type="text" name="mail" class="constructor-input" placeholder="E-mail*">
+															</div>
+														</div>
+														<div class="constructor__form-text">
+															<div class="constructor-text">
+																<textarea name="message" class="constructor-message" placeholder="Напишите комментарий"></textarea>
+															</div>
+														</div>
+														<div class="constructor__form-checkbox">
+															<input id="top-checkbox" type="checkbox" class="constructor-checkbox">
+															<label for="top-checkbox" class="constructor-label">Согласен на обработку
+																персональных данных в соответствии с <a href="#">Политикой
+																	конфиденциальности</a> и
+																<a href="#">Договором оферты</a></label>
+
+														</div>
+														<div class="constructor__form-button">
+															<input type="submit" class="costructor-submit" value="Отправить">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="constructor__bottom">
+									<div class="constructor__bottom-title">
+										<p>ВИД ПРЕДМЕТОВ</p>
+									</div>
+									<div class="constructor__bottom-body">
+										<div class="constructor__bottom-left">
+											<div class="constructor__bottom-top active" id="bottom-top-1-1">
+												<input id="bottom-checkbox-1" type="checkbox" class="bottom__line-checkbox">
+												<label for="bottom-checkbox-1" class="bottom__line-label">Прямоугольник</label>
+											</div>
+											<div class="constructor__bottom-wrapper">
+												<div class="constructor__wrapper-left">
+													<picture><source srcset="img/constructor/pryamo.webp" type="image/webp"><img src="img/constructor/pryamo.png" alt=""></picture>
+													<div class="long">
+														<span>Длина</span>
+														<input type="number" class="input__number" placeholder="120 мм" min="0">
+													</div>
+												</div>
+												<div class="constructor__wrapper-right">
+													<div class="height">
+														<span>Высота</span>
+														<input type="number" class="input__number" placeholder="270 мм" min="0">
+													</div>
+													<div class="width">
+														<span>Ширина</span>
+														<input type="number" class="input__number" placeholder="50 мм" min="0">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="constructor__bottom-right">
+											<div class="constructor__bottom-top" id="bottom-top-2-1">
+												<input id="bottom-checkbox-2" type="checkbox" class="bottom__line-checkbox">
+												<label for="bottom-checkbox-2" class="bottom__line-label">Цилиндр</label>
+											</div>
+											<div class="constructor__bottom-wrapper">
+												<div class="constructor__wrapper-left">
+													<picture><source srcset="img/constructor/cilindr.webp" type="image/webp"><img src="img/constructor/cilindr.png" alt=""></picture>
+													<div class="long">
+														<span>Диаметр</span>
+														<input type="number" class="input__number" placeholder="300 мм" min="0">
+													</div>
+												</div>
+												<div class="constructor__wrapper-right">
+													<div class="height">
+														<span>Высота</span>
+														<input type="number" class="input__number" placeholder="400 мм" min="0">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="constructor-top-bottom">
+								<div class="constructor__top-body">
+									<div class="constructor__top-left">
+										<div class="constructor__top-top">
+											<div class="constructor__left-left">
+												<picture><source srcset="img/constructor/top.webp" type="image/webp"><img src="img/constructor/top.png"></picture>
+											</div>
+											<div class="constructor__left-right">
+												<div class="width">
+													<span>Припуск к клапану</span>
+													<input type="number" class="input__number" placeholder="0 мм" min="0">
+												</div>
+											</div>
+										</div>
+										<div class="constructor__left-body">
+											<div class="constructor__left-left">
+												<picture><source srcset="img/constructor/bottom.webp" type="image/webp"><img src="img/constructor/bottom.png"></picture>
+											</div>
+											<div class="constructor__left-right">
+												<div class="width">
+													<span>Припуск по длине</span>
+													<input type="number" class="input__number" placeholder="0 мм" min="0">
+												</div>
+											</div>
+										</div>
+										<div class="long">
+											<span>Припуск по ширине</span>
+											<input type="number" class="input__number" placeholder="0 мм" min="0">
+										</div>
+									</div>
+									<div class="constructor__top-right">
+										<div class="constructor__right-body">
+											<div class="constructor__right-top">
+												<p>Размеры для расчета</p>
+											</div>
+											<div class="constructor__right-table">
+												<div class="constructor__table-line">
+													<p class="table-left">Ширина пакета</p>
+													<p class="table-right">400 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Длина пакета</p>
+													<p class="table-right">500 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Длина клапана</p>
+													<p class="table-right">50 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Полотно</p>
+													<p class="table-right">1050 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">ПолуРукав</p>
+													<p class="table-right">500 + 50 <span>мм</span></p>
+												</div>
+											</div>
+											<div class="constructor__right-bottom">
+												<div class="constructor__right-info">
+													<p>Заявка <span>№ 5:55:15</span></p>
+													<p>Дата <span>30.03.2023</span></p>
+												</div>
+												<div class="constructor__right-form">
+													<form id="construct">
+														<div class="constructor__form-inputs">
+															<div class="constructor-inputs">
+																<input type="text" name="name" class="constructor-input" placeholder="ФИО или Компания*">
+															</div>
+															<div class="constructor-inputs">
+																<input type="text" name="phone" class="constructor-input" placeholder="Телефон*">
+															</div>
+															<div class="constructor-inputs">
+																<input type="text" name="mail" class="constructor-input" placeholder="E-mail*">
+															</div>
+														</div>
+														<div class="constructor__form-text">
+															<div class="constructor-text">
+																<textarea name="message" class="constructor-message" placeholder="Напишите комментарий"></textarea>
+															</div>
+														</div>
+														<div class="constructor__form-checkbox">
+															<input id="top-checkbox2" type="checkbox" class="constructor-checkbox">
+															<label for="top-checkbox2" class="constructor-label">Согласен на обработку
+																персональных данных в соответствии с <a href="#">Политикой
+																	конфиденциальности</a> и
+																<a href="#">Договором оферты</a></label>
+
+														</div>
+														<div class="constructor__form-button">
+															<input type="submit" class="costructor-submit" value="Отправить">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="constructor__bottom">
+									<div class="constructor__bottom-title">
+										<p>ВИД ПРЕДМЕТОВ</p>
+									</div>
+									<div class="constructor__bottom-body">
+										<div class="constructor__bottom-left">
+											<div class="constructor__bottom-top" id="bottom-top-1-2">
+												<input id="bottom-checkbox-1" type="checkbox" class="bottom__line-checkbox">
+												<label for="bottom-checkbox-1" class="bottom__line-label">Прямоугольник</label>
+											</div>
+											<div class="constructor__bottom-wrapper">
+												<div class="constructor__wrapper-left">
+													<picture><source srcset="img/constructor/pryamo.webp" type="image/webp"><img src="img/constructor/pryamo.png" alt=""></picture>
+													<div class="long">
+														<span>Длина</span>
+														<input type="number" class="input__number" placeholder="300 мм" min="0">
+													</div>
+												</div>
+												<div class="constructor__wrapper-right">
+													<div class="height">
+														<span>Высота</span>
+														<input type="number" class="input__number" placeholder="400 мм" min="0">
+													</div>
+													<div class="width">
+														<span>Ширина</span>
+														<input type="number" class="input__number" placeholder="100 мм" min="0">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="constructor__bottom-right">
+											<div class="constructor__bottom-top active" id="bottom-top-2-2">
+												<input id="bottom-checkbox-2" type="checkbox" class="bottom__line-checkbox">
+												<label for="bottom-checkbox-2" class="bottom__line-label">Цилиндр</label>
+											</div>
+											<div class="constructor__bottom-wrapper">
+												<div class="constructor__wrapper-left">
+													<picture><source srcset="img/constructor/cilindr.webp" type="image/webp"><img src="img/constructor/cilindr.png" alt=""></picture>
+													<div class="long">
+														<span>Диаметр</span>
+														<input type="number" class="input__number" placeholder="10 мм" min="0">
+													</div>
+												</div>
+												<div class="constructor__wrapper-right">
+													<div class="height">
+														<span>Высота</span>
+														<input type="number" class="input__number" placeholder="20 мм" min="0">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="constructor-top-bottom">
+								<div class="constructor__top-body">
+									<div class="constructor__top-left">
+										<div class="constructor__top-top">
+											<div class="constructor__left-left">
+												<picture><source srcset="img/constructor/top2.webp" type="image/webp"><img src="img/constructor/top2.png"></picture>
+											</div>
+											<div class="constructor__left-right">
+												<div class="width">
+													<span>Припуск к клапану</span>
+													<input type="number" class="input__number" placeholder="0 мм" min="0">
+												</div>
+											</div>
+										</div>
+										<div class="constructor__left-body">
+											<div class="constructor__left-left">
+												<picture><source srcset="img/constructor/bottom2.webp" type="image/webp"><img src="img/constructor/bottom2.png"></picture>
+											</div>
+											<div class="constructor__left-right">
+												<div class="width">
+													<span>Припуск по длине</span>
+													<input type="number" class="input__number" placeholder="0 мм" min="0">
+												</div>
+											</div>
+										</div>
+										<div class="long">
+											<span>Припуск по ширине</span>
+											<input type="number" class="input__number" placeholder="0 мм" min="0">
+										</div>
+									</div>
+									<div class="constructor__top-right">
+										<div class="constructor__right-body">
+											<div class="constructor__right-top">
+												<p>Размеры для расчета</p>
+											</div>
+											<div class="constructor__right-table">
+												<div class="constructor__table-line">
+													<p class="table-left">Ширина пакета</p>
+													<p class="table-right">360 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Донная складка</p>
+													<p class="table-right">2 X 30 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Длина пакета</p>
+													<p class="table-right">380 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Длина клапана</p>
+													<p class="table-right">80 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Полотно</p>
+													<p class="table-right">900 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">ПолуРукав</p>
+													<p class="table-right">410 + 80 <span>мм</span></p>
+												</div>
+											</div>
+											<div class="constructor__right-bottom">
+												<div class="constructor__right-info">
+													<p>Заявка <span>№ 5:55:15</span></p>
+													<p>Дата <span>30.03.2023</span></p>
+												</div>
+												<div class="constructor__right-form">
+													<form id="construct">
+														<div class="constructor__form-inputs">
+															<div class="constructor-inputs">
+																<input type="text" name="name" class="constructor-input" placeholder="ФИО или Компания*">
+															</div>
+															<div class="constructor-inputs">
+																<input type="text" name="phone" class="constructor-input" placeholder="Телефон*">
+															</div>
+															<div class="constructor-inputs">
+																<input type="text" name="mail" class="constructor-input" placeholder="E-mail*">
+															</div>
+														</div>
+														<div class="constructor__form-text">
+															<div class="constructor-text">
+																<textarea name="message" class="constructor-message" placeholder="Напишите комментарий"></textarea>
+															</div>
+														</div>
+														<div class="constructor__form-checkbox">
+															<input id="top-checkbox3" type="checkbox" class="constructor-checkbox">
+															<label for="top-checkbox3" class="constructor-label">Согласен на обработку
+																персональных данных в соответствии с <a href="#">Политикой
+																	конфиденциальности</a> и
+																<a href="#">Договором оферты</a></label>
+
+														</div>
+														<div class="constructor__form-button">
+															<input type="submit" class="costructor-submit" value="Отправить">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="constructor__bottom">
+									<div class="constructor__bottom-title">
+										<p>ВИД ПРЕДМЕТОВ</p>
+									</div>
+									<div class="constructor__bottom-body">
+										<div class="constructor__bottom-left">
+											<div class="constructor__bottom-top" id="bottom-top-1-3">
+												<input id="bottom-checkbox-1" type="checkbox" class="bottom__line-checkbox">
+												<label for="bottom-checkbox-1" class="bottom__line-label">Прямоугольник</label>
+											</div>
+											<div class="constructor__bottom-wrapper">
+												<div class="constructor__wrapper-left">
+													<picture><source srcset="img/constructor/pryamo.webp" type="image/webp"><img src="img/constructor/pryamo.png" alt=""></picture>
+													<div class="long">
+														<span>Длина</span>
+														<input type="number" class="input__number" placeholder="300 мм" min="0">
+													</div>
+												</div>
+												<div class="constructor__wrapper-right">
+													<div class="height">
+														<span>Высота</span>
+														<input type="number" class="input__number" placeholder="350 мм" min="0">
+													</div>
+													<div class="width">
+														<span>Ширина</span>
+														<input type="number" class="input__number" placeholder="60 мм" min="0">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="constructor__bottom-right">
+											<div class="constructor__bottom-top active" id="bottom-top-2-3">
+												<input id="bottom-checkbox-2" type="checkbox" class="bottom__line-checkbox">
+												<label for="bottom-checkbox-2" class="bottom__line-label">Цилиндр</label>
+											</div>
+											<div class="constructor__bottom-wrapper">
+												<div class="constructor__wrapper-left">
+													<picture><source srcset="img/constructor/cilindr.webp" type="image/webp"><img src="img/constructor/cilindr.png" alt=""></picture>
+													<div class="long">
+														<span>Диаметр</span>
+														<input type="number" class="input__number" placeholder="80 мм" min="0">
+													</div>
+												</div>
+												<div class="constructor__wrapper-right">
+													<div class="height">
+														<span>Высота</span>
+														<input type="number" class="input__number" placeholder="90 мм" min="0">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+
+			</div>
+		</footer>
+	</div>
+
+	<div id="popup__callback" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<div class="popup__title main__right-title">
+						<h2>ОСТАВЬТЕ ЗАЯВКУ</h2>
+					</div>
+					<div class="popup__subtitle main__right-text">
+						<p>И наш специалист свяжется с Вами в ближайшее время</p>
+					</div>
+					<div class="popup__body">
+						<div class="popup__input main__right-form">
+							<p class="popup__subtitle main__right-subtitle">Номер телефона *</p>
+							<form id="callback" data-popup-message="#popup__message" data-dev action="" method="" class="popup__form">
+								<input class="tel input _phone" required>
+								<button form="callback" type="submit"><span>Отправить</span></button>
+							</form>
+							<p class="popup__politics main__right-politics">
+								Нажимая кнопку, вы даете согласие на <a href="privacy.html" target="_blank">обработку
+									персональных
+									данных</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup__message" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<div class="popup__title">Заявка отправлена!</div>
+					<div class="popup__subtitle">
+						В скором времени мы с вами свяжемся
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230426111718"></script>
+</body>
+
+</html>

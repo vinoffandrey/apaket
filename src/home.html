@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body style="overflow-x: hidden;">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="fixed">
+				<div class="constructor__body">
+					<div class="constructor__top" data-tabs>
+						<div class="constructor__top-line" data-tabs-titles>
+							<div class="top__line-item _tab-active">
+								<p>Пакет простой</p>
+							</div>
+							<div class="top__line-item">
+								<p>Пакет с клапаном</p>
+							</div>
+							<div class="top__line-item">
+								<p>Пакет с клапаном и донной складкой</p>
+							</div>
+						</div>
+						<div class="constructor__top-wrapper" data-tabs-body>
+							<div class="constructor-top-bottom">
+								<div class="constructor__top-body">
+									<div class="constructor__top-left">
+										<div class="constructor__left-body">
+											<div class="constructor__left-left">
+												<img src="img/constructor/const.png">
+											</div>
+											<div class="constructor__left-right">
+												<div class="width">
+													<span>Припуск по длине</span>
+													<input type="number" class="input__number" placeholder="0 мм" min="0">
+												</div>
+											</div>
+										</div>
+										<div class="long">
+											<span>Припуск по ширине</span>
+											<input type="number" class="input__number" placeholder="0 мм" min="0">
+										</div>
+									</div>
+									<div class="constructor__top-right">
+										<div class="constructor__right-body">
+											<div class="constructor__right-top">
+												<p>Размеры для расчета</p>
+											</div>
+											<div class="constructor__right-table">
+												<div class="constructor__table-line">
+													<p class="table-left">Ширина пакета</p>
+													<p class="table-right">170 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Длина пакета</p>
+													<p class="table-right">320 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Полотно</p>
+													<p class="table-right">380 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">ПолуРукав</p>
+													<p class="table-right">80 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Рукав</p>
+													<p class="table-right">900 <span>мм</span></p>
+												</div>
+											</div>
+											<div class="constructor__right-bottom">
+												<div class="constructor__right-info">
+													<p>Заявка <span>№ 5:55:15</span></p>
+													<p>Дата <span>30.03.2023</span></p>
+												</div>
+												<div class="constructor__right-form">
+													<form id="construct">
+														<div class="constructor__form-inputs">
+															<div class="constructor-inputs">
+																<input type="text" name="name" class="constructor-input"
+																	placeholder="ФИО или Компания*">
+															</div>
+															<div class="constructor-inputs">
+																<input type="text" name="phone" class="constructor-input"
+																	placeholder="Телефон*">
+															</div>
+															<div class="constructor-inputs">
+																<input type="text" name="mail" class="constructor-input"
+																	placeholder="E-mail*">
+															</div>
+														</div>
+														<div class="constructor__form-text">
+															<div class="constructor-text">
+																<textarea name="message" class="constructor-message"
+																	placeholder="Напишите комментарий"></textarea>
+															</div>
+														</div>
+														<div class="constructor__form-checkbox">
+															<input id="top-checkbox" type="checkbox" class="constructor-checkbox">
+															<label for="top-checkbox" class="constructor-label">Согласен на обработку
+																персональных данных в соответствии с <a href="#">Политикой
+																	конфиденциальности</a> и
+																<a href="#">Договором оферты</a></label>
+
+														</div>
+														<div class="constructor__form-button">
+															<input type="submit" class="costructor-submit" value="Отправить">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="constructor__bottom">
+									<div class="constructor__bottom-title">
+										<p>ВИД ПРЕДМЕТОВ</p>
+									</div>
+									<div class="constructor__bottom-body">
+										<div class="constructor__bottom-left">
+											<div class="constructor__bottom-top active" id="bottom-top-1-1">
+												<input id="bottom-checkbox-1" type="checkbox" class="bottom__line-checkbox">
+												<label for="bottom-checkbox-1" class="bottom__line-label">Прямоугольник</label>
+											</div>
+											<div class="constructor__bottom-wrapper">
+												<div class="constructor__wrapper-left">
+													<img src="img/constructor/pryamo.png" alt="">
+													<div class="long">
+														<span>Длина</span>
+														<input type="number" class="input__number" placeholder="120 мм" min="0">
+													</div>
+												</div>
+												<div class="constructor__wrapper-right">
+													<div class="height">
+														<span>Высота</span>
+														<input type="number" class="input__number" placeholder="270 мм" min="0">
+													</div>
+													<div class="width">
+														<span>Ширина</span>
+														<input type="number" class="input__number" placeholder="50 мм" min="0">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="constructor__bottom-right">
+											<div class="constructor__bottom-top" id="bottom-top-2-1">
+												<input id="bottom-checkbox-2" type="checkbox" class="bottom__line-checkbox">
+												<label for="bottom-checkbox-2" class="bottom__line-label">Цилиндр</label>
+											</div>
+											<div class="constructor__bottom-wrapper">
+												<div class="constructor__wrapper-left">
+													<img src="img/constructor/cilindr.png" alt="">
+													<div class="long">
+														<span>Диаметр</span>
+														<input type="number" class="input__number" placeholder="300 мм" min="0">
+													</div>
+												</div>
+												<div class="constructor__wrapper-right">
+													<div class="height">
+														<span>Высота</span>
+														<input type="number" class="input__number" placeholder="400 мм" min="0">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="constructor-top-bottom">
+								<div class="constructor__top-body">
+									<div class="constructor__top-left">
+										<div class="constructor__top-top">
+											<div class="constructor__left-left">
+												<img src="img/constructor/top.png">
+											</div>
+											<div class="constructor__left-right">
+												<div class="width">
+													<span>Припуск к клапану</span>
+													<input type="number" class="input__number" placeholder="0 мм" min="0">
+												</div>
+											</div>
+										</div>
+										<div class="constructor__left-body">
+											<div class="constructor__left-left">
+												<img src="img/constructor/bottom.png">
+											</div>
+											<div class="constructor__left-right">
+												<div class="width">
+													<span>Припуск по длине</span>
+													<input type="number" class="input__number" placeholder="0 мм" min="0">
+												</div>
+											</div>
+										</div>
+										<div class="long">
+											<span>Припуск по ширине</span>
+											<input type="number" class="input__number" placeholder="0 мм" min="0">
+										</div>
+									</div>
+									<div class="constructor__top-right">
+										<div class="constructor__right-body">
+											<div class="constructor__right-top">
+												<p>Размеры для расчета</p>
+											</div>
+											<div class="constructor__right-table">
+												<div class="constructor__table-line">
+													<p class="table-left">Ширина пакета</p>
+													<p class="table-right">400 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Длина пакета</p>
+													<p class="table-right">500 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Длина клапана</p>
+													<p class="table-right">50 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Полотно</p>
+													<p class="table-right">1050 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">ПолуРукав</p>
+													<p class="table-right">500 + 50 <span>мм</span></p>
+												</div>
+											</div>
+											<div class="constructor__right-bottom">
+												<div class="constructor__right-info">
+													<p>Заявка <span>№ 5:55:15</span></p>
+													<p>Дата <span>30.03.2023</span></p>
+												</div>
+												<div class="constructor__right-form">
+													<form id="construct">
+														<div class="constructor__form-inputs">
+															<div class="constructor-inputs">
+																<input type="text" name="name" class="constructor-input"
+																	placeholder="ФИО или Компания*">
+															</div>
+															<div class="constructor-inputs">
+																<input type="text" name="phone" class="constructor-input"
+																	placeholder="Телефон*">
+															</div>
+															<div class="constructor-inputs">
+																<input type="text" name="mail" class="constructor-input"
+																	placeholder="E-mail*">
+															</div>
+														</div>
+														<div class="constructor__form-text">
+															<div class="constructor-text">
+																<textarea name="message" class="constructor-message"
+																	placeholder="Напишите комментарий"></textarea>
+															</div>
+														</div>
+														<div class="constructor__form-checkbox">
+															<input id="top-checkbox2" type="checkbox" class="constructor-checkbox">
+															<label for="top-checkbox2" class="constructor-label">Согласен на обработку
+																персональных данных в соответствии с <a href="#">Политикой
+																	конфиденциальности</a> и
+																<a href="#">Договором оферты</a></label>
+
+														</div>
+														<div class="constructor__form-button">
+															<input type="submit" class="costructor-submit" value="Отправить">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="constructor__bottom">
+									<div class="constructor__bottom-title">
+										<p>ВИД ПРЕДМЕТОВ</p>
+									</div>
+									<div class="constructor__bottom-body">
+										<div class="constructor__bottom-left">
+											<div class="constructor__bottom-top" id="bottom-top-1-2">
+												<input id="bottom-checkbox-1" type="checkbox" class="bottom__line-checkbox">
+												<label for="bottom-checkbox-1" class="bottom__line-label">Прямоугольник</label>
+											</div>
+											<div class="constructor__bottom-wrapper">
+												<div class="constructor__wrapper-left">
+													<img src="img/constructor/pryamo.png" alt="">
+													<div class="long">
+														<span>Длина</span>
+														<input type="number" class="input__number" placeholder="300 мм" min="0">
+													</div>
+												</div>
+												<div class="constructor__wrapper-right">
+													<div class="height">
+														<span>Высота</span>
+														<input type="number" class="input__number" placeholder="400 мм" min="0">
+													</div>
+													<div class="width">
+														<span>Ширина</span>
+														<input type="number" class="input__number" placeholder="100 мм" min="0">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="constructor__bottom-right">
+											<div class="constructor__bottom-top active" id="bottom-top-2-2">
+												<input id="bottom-checkbox-2" type="checkbox" class="bottom__line-checkbox">
+												<label for="bottom-checkbox-2" class="bottom__line-label">Цилиндр</label>
+											</div>
+											<div class="constructor__bottom-wrapper">
+												<div class="constructor__wrapper-left">
+													<img src="img/constructor/cilindr.png" alt="">
+													<div class="long">
+														<span>Диаметр</span>
+														<input type="number" class="input__number" placeholder="10 мм" min="0">
+													</div>
+												</div>
+												<div class="constructor__wrapper-right">
+													<div class="height">
+														<span>Высота</span>
+														<input type="number" class="input__number" placeholder="20 мм" min="0">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="constructor-top-bottom">
+								<div class="constructor__top-body">
+									<div class="constructor__top-left">
+										<div class="constructor__top-top">
+											<div class="constructor__left-left">
+												<img src="img/constructor/top2.png">
+											</div>
+											<div class="constructor__left-right">
+												<div class="width">
+													<span>Припуск к клапану</span>
+													<input type="number" class="input__number" placeholder="0 мм" min="0">
+												</div>
+											</div>
+										</div>
+										<div class="constructor__left-body">
+											<div class="constructor__left-left">
+												<img src="img/constructor/bottom2.png">
+											</div>
+											<div class="constructor__left-right">
+												<div class="width">
+													<span>Припуск по длине</span>
+													<input type="number" class="input__number" placeholder="0 мм" min="0">
+												</div>
+											</div>
+										</div>
+										<div class="long">
+											<span>Припуск по ширине</span>
+											<input type="number" class="input__number" placeholder="0 мм" min="0">
+										</div>
+									</div>
+									<div class="constructor__top-right">
+										<div class="constructor__right-body">
+											<div class="constructor__right-top">
+												<p>Размеры для расчета</p>
+											</div>
+											<div class="constructor__right-table">
+												<div class="constructor__table-line">
+													<p class="table-left">Ширина пакета</p>
+													<p class="table-right">360 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Донная складка</p>
+													<p class="table-right">2 X 30 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Длина пакета</p>
+													<p class="table-right">380 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Длина клапана</p>
+													<p class="table-right">80 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">Полотно</p>
+													<p class="table-right">900 <span>мм</span></p>
+												</div>
+												<div class="constructor__table-line">
+													<p class="table-left">ПолуРукав</p>
+													<p class="table-right">410 + 80 <span>мм</span></p>
+												</div>
+											</div>
+											<div class="constructor__right-bottom">
+												<div class="constructor__right-info">
+													<p>Заявка <span>№ 5:55:15</span></p>
+													<p>Дата <span>30.03.2023</span></p>
+												</div>
+												<div class="constructor__right-form">
+													<form id="construct">
+														<div class="constructor__form-inputs">
+															<div class="constructor-inputs">
+																<input type="text" name="name" class="constructor-input"
+																	placeholder="ФИО или Компания*">
+															</div>
+															<div class="constructor-inputs">
+																<input type="text" name="phone" class="constructor-input"
+																	placeholder="Телефон*">
+															</div>
+															<div class="constructor-inputs">
+																<input type="text" name="mail" class="constructor-input"
+																	placeholder="E-mail*">
+															</div>
+														</div>
+														<div class="constructor__form-text">
+															<div class="constructor-text">
+																<textarea name="message" class="constructor-message"
+																	placeholder="Напишите комментарий"></textarea>
+															</div>
+														</div>
+														<div class="constructor__form-checkbox">
+															<input id="top-checkbox3" type="checkbox" class="constructor-checkbox">
+															<label for="top-checkbox3" class="constructor-label">Согласен на обработку
+																персональных данных в соответствии с <a href="#">Политикой
+																	конфиденциальности</a> и
+																<a href="#">Договором оферты</a></label>
+
+														</div>
+														<div class="constructor__form-button">
+															<input type="submit" class="costructor-submit" value="Отправить">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="constructor__bottom">
+									<div class="constructor__bottom-title">
+										<p>ВИД ПРЕДМЕТОВ</p>
+									</div>
+									<div class="constructor__bottom-body">
+										<div class="constructor__bottom-left">
+											<div class="constructor__bottom-top" id="bottom-top-1-3">
+												<input id="bottom-checkbox-1" type="checkbox" class="bottom__line-checkbox">
+												<label for="bottom-checkbox-1" class="bottom__line-label">Прямоугольник</label>
+											</div>
+											<div class="constructor__bottom-wrapper">
+												<div class="constructor__wrapper-left">
+													<img src="img/constructor/pryamo.png" alt="">
+													<div class="long">
+														<span>Длина</span>
+														<input type="number" class="input__number" placeholder="300 мм" min="0">
+													</div>
+												</div>
+												<div class="constructor__wrapper-right">
+													<div class="height">
+														<span>Высота</span>
+														<input type="number" class="input__number" placeholder="350 мм" min="0">
+													</div>
+													<div class="width">
+														<span>Ширина</span>
+														<input type="number" class="input__number" placeholder="60 мм" min="0">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="constructor__bottom-right">
+											<div class="constructor__bottom-top active" id="bottom-top-2-3">
+												<input id="bottom-checkbox-2" type="checkbox" class="bottom__line-checkbox">
+												<label for="bottom-checkbox-2" class="bottom__line-label">Цилиндр</label>
+											</div>
+											<div class="constructor__bottom-wrapper">
+												<div class="constructor__wrapper-left">
+													<img src="img/constructor/cilindr.png" alt="">
+													<div class="long">
+														<span>Диаметр</span>
+														<input type="number" class="input__number" placeholder="80 мм" min="0">
+													</div>
+												</div>
+												<div class="constructor__wrapper-right">
+													<div class="height">
+														<span>Высота</span>
+														<input type="number" class="input__number" placeholder="90 мм" min="0">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
